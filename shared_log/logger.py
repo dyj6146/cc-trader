@@ -13,4 +13,5 @@ if not os.path.exists('logs'):
     os.mkdir('logs')
     
 logging.config.fileConfig("config\\logger.ini")
-logger = logging.getLogger()
+logger = logging.getLogger('root')
+logger_ws = logging.getLogger('websocket')

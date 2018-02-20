@@ -9,7 +9,7 @@ import abc
 
 class BaseTrader(object):
     '''
-    Abstract base class of a trader
+    Abstract base class of Trader
     '''
 
     @abc.abstractmethod
@@ -34,10 +34,14 @@ class BaseTrader(object):
     def cancel_order(self):
         '''
         Cancel an existing order
-        '''        
+        '''
     
     @abc.abstractmethod
     def query_order(self):
         '''
         Get order status
-        '''        
+        '''
+        
+    @abc.abstractclassmethod
+    def get_(self): 
+        pass
